@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Error Messages</title>
+    <style>
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <form id="userForm">
+        <label for="fname">Enter a Fname:</label><br>
+        <input type="text" id="fname" name="fname">
+        <p id="fnameError" style="color: red;" class="error"></p>
+        <br>
+
+        <label for="lname">Enter a Lname:</label><br>
+        <input type="text" id="lname" name="lname">
+        <p id="lnameError" class="error"></p>
+        <br>
+
+        <label for="bdate">Enter a Bdate:</label><br>
+        <input type="text" id="bdate" name="bdate">
+        <span>Format of Bdate YY-MM-DD</span>
+        <p id="bdateError" class="error"></p>
+        <br>
+        <label for="email">Enter an Email:</label><br>
+        <input type="email" id="email" name="email">
+        <span> Example Format of user_name123@gmail.com</span>
+        <p id="emailError" class="error"></p>
+        <br>
+
+        <label for="confirmEmail">Confirm Email:</label><br>
+        <input type="email" id="confirmEmail" name="confirmEmail">
+        <span> Example Format of user_name123@gmail.com</span>
+        <p id="confirmEmailError" class="error"></p>
+        <br>    
+
+        <label for="password">Password:</label><br>
+        <input type="text" id="password" name="password">
+        <p id="passwordError" class="error"></p>
+        <br>
+
+        <label for="confirmPassword">Confirm Password:</label><br>
+        <input type="text" id="confirmPassword" name="confirmPassword">
+        <p id="confirmPasswordError" class="error"></p>
+    </form>
+    <script src="RegEx.js"></script>
+</body>
+</html>
